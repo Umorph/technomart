@@ -267,5 +267,24 @@
         <img src="#" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <button class="modal-close" type="button"></button>
     </section>
+    <section class="modal-write">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="input-item">
+                <label for="write_name">Ваше имя:</label>
+                <input class="modal-write-name" id="write_name" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
+            </p>
+            <p class="input-item">
+                <label for="write_email">Ваш e-mail:</label>
+                <input class="modal-write-email" id="write_email" type="email" name="email" placeholder="Для отправки ответа" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+            </p>
+            <p class="input-item">
+                <label for="white_text">Текст письма:</label>
+                <textarea name="plaintext" id="white_text" cols="30" rows="10">В свободной форме</textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
 </body>
 </html>
