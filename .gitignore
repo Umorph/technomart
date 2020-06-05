@@ -28,3 +28,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/windows
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/technomart.iml
+/.idea/vcs.xml
