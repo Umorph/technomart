@@ -858,6 +858,8 @@ input[type="radio"].visually-hidden {
 /* main-services */
 
 .main-services {
+    padding-bottom: 55px;
+
     background-color: #f4f8f9;
 }
 
@@ -886,4 +888,165 @@ input[type="radio"].visually-hidden {
     color: #000000;
 
     background-color: #f4f8f9;
+}
+
+.slider-services {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-services-controls {
+    position: relative;
+
+    margin: 0;
+    padding: 70px 0 0;
+    width: 240px;
+}
+
+.slider-services-controls::after {
+    content: '';
+
+    position: absolute;
+    top: 25px;
+    right: 0;
+
+    display: block;
+    width: 10px;
+    height: 272px;
+
+    background-image: url("../img/slider-btn-line.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 60px;
+
+    font-family: Cuprum, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: #ffffff;
+
+    border: none;
+    background: #32425c none;
+    outline: 1px solid #4d637b;
+    cursor: pointer;
+}
+
+.services-button span {
+    display: block;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.services-button-current {
+    color: #32425c;
+
+    background-color: #ffffff;
+    outline: none;
+}
+
+.slider-services-list {
+    margin: 0;
+    padding: 0;
+    width: 620px;
+
+    list-style: none;
+}
+
+.slider-services-item {
+    position: relative;
+
+    display: none;
+
+    margin: 0;
+    padding: 0;
+    min-height: 300px;
+}
+
+.service-item-current {
+    display: block;
+}
+
+.slider-services-item h3 {
+    margin: 0;
+    padding: 70px 0 0;
+
+    font-family: Cuprum, sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.service-delivery::after {
+    content: '';
+
+    position: absolute;
+    top: 95px;
+    right: 0;
+
+    display: block;
+    width: 468px;
+    height: 261px;
+
+    background-image: url("../img/delivery.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.service-guarantee::after {
+    content: '';
+
+    position: absolute;
+    top: 70px;
+    right: -10px;
+
+    display: block;
+    width: 389px;
+    height: 283px;
+
+    background-image: url("../img/guarantee.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.service-credit::after {
+    content: '';
+
+    position: absolute;
+    top: 70px;
+    right: -10px;
+
+    display: block;
+    width: 465px;
+    height: 285px;
+
+    background-image: url("../img/credit.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.service-credit button {
+    margin: 25px 0 0;
+    padding: 0;
+
+    width: 195px;
+    min-height: 40px;
+
+    font-family: Cuprum, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    border: 0;
+    background-color: #ff5357;
 }
