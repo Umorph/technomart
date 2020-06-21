@@ -1053,8 +1053,14 @@ input[type="radio"].visually-hidden {
 
 /* main-about */
 
+.main-about {
+    margin: 0;
+    padding: 0;
+    width: 540px;
+}
+
 .main-about h2 {
-    margin: 80px 0 0;
+    margin: 0;
     padding: 0;
 
     font-family: Cuprum, sans-serif;
@@ -1126,4 +1132,63 @@ input[type="radio"].visually-hidden {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* main-contacts */
+
+.columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 80px;
+}
+
+.main-contacts {
+    width: 300px;
+}
+
+.main-contacts h2 {
+    margin: 0;
+    padding: 0;
+
+    font-family: Cuprum, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.main-contacts p {
+    margin: 25px 0 30px;
+    padding: 0;
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.main-contacts button {
+    margin: 35px 0 0;
+    padding: 0;
+
+    width: 300px;
+    min-height: 45px;
+
+    font-family: Cuprum, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    border: none;
+    border-radius: 4px;
 }
