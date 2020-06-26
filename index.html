@@ -261,71 +261,84 @@
         </div>
     </main>
     <footer class="main-footer">
-        <h1><a>Техномарт</a></h1>
-        <nav class="footer-navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item"><a href="#">Компания</a></li>
-                <li class="navigation-item"><a href="#">Новости</a></li>
-                <li class="navigation-item"><a href="#">Каталог</a></li>
-                <li class="navigation-item"><a href="#">Доставка</a></li>
-                <li class="navigation-item"><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <nav class="footer-navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item"><a href="#">Материалы</a></li>
-                <li class="navigation-item"><a href="#">Техника</a></li>
-                <li class="navigation-item"><a href="#">Инструмент</a></li>
-                <li class="navigation-item"><a href="#">Спецпредложения</a></li>
-            </ul>
-        </nav>
-        <p class="adress">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
-        </p>
-        <p class="copiright">
-            © 2010–2017 Компания «Техномарт»<br>
-            Все права защищены
-        </p>
-        <div class="social">
-            <ul class="social-list">
-                <li class="social-item"><a href="#"><img src="#" alt="VK"></a></li>
-                <li class="social-item"><a href="#"><img src="#" alt="Facebook"></a></li>
-                <li class="social-item"><a href="#"><img src="#" alt="Instagram"></a></li>
-            </ul>
+        <div class="main-footer-wrapper-top">
+            <div class="container">
+                <div class="address-wrapper">
+                    <h1 class="main-header-logo logo-footer"><a>Техномарт</a></h1>
+                    <p class="address">
+                        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                        +7 (812) 555-05-55
+                    </p>
+                </div>
+                <div class="navigation-wrapper">
+                    <nav class="footer-navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-item"><a href="#">Компания</a></li>
+                            <li class="navigation-item"><a href="#">Новости</a></li>
+                            <li class="navigation-item"><a href="#">Каталог</a></li>
+                            <li class="navigation-item"><a href="#">Доставка</a></li>
+                            <li class="navigation-item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-item"><a href="#">Материалы</a></li>
+                            <li class="navigation-item"><a href="#">Техника</a></li>
+                            <li class="navigation-item"><a href="#">Инструмент</a></li>
+                            <li class="navigation-item"><a href="#">Спецпредложения</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <address>
-            Обратная связь:<br>
-            mail@htmlacademy.ru
-        </address>
-        <address>
-            Разработано - 
-            <a href="https://www.htmlacademy.ru">htmlacademy.ru</a>
-        </address>
+        <div class="main-footer-wrapper-bottom">
+            <div class="container">
+                <p class="copyright">
+                © 2010–2017 Компания «Техномарт»<br>
+                Все права защищены
+                </p>
+                <ul class="social-list">
+                    <li class="social-item"><a href="#"><img src="assets/svg/icon-vk.svg" alt="VK"></a></li>
+                    <li class="social-item"><a href="#"><img src="assets/svg/icon-fb.svg" alt="Facebook"></a></li>
+                    <li class="social-item"><a href="#"><img src="assets/svg/icon-insta.svg" alt="Instagram"></a></li>
+                </ul>
+                <div class="footer-address-wrapper">
+                    <p>
+                        Обратная связь:<br>
+                        <span>mail@htmlacademy.ru</span>
+                    </p>
+                    <p>
+                        Разработано -
+                        <a href="https://www.htmlacademy.ru">htmlacademy.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">Адрес магазина</h2>
-        <img src="#" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <button class="modal-close" type="button"></button>
-    </section>
-    <section class="modal-write">
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="input-item">
-                <label for="write_name">Ваше имя:</label>
-                <input class="modal-write-name" id="write_name" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
-            </p>
-            <p class="input-item">
-                <label for="write_email">Ваш e-mail:</label>
-                <input class="modal-write-email" id="write_email" type="email" name="email" placeholder="Для отправки ответа" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
-            </p>
-            <p class="input-item">
-                <label for="white_text">Текст письма:</label>
-                <textarea name="plaintext" id="white_text" cols="30" rows="10">В свободной форме</textarea>
-            </p>
-            <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
+
+<!--    <section class="modal modal-map">-->
+<!--        <h2 class="visually-hidden">Адрес магазина</h2>-->
+<!--        <img src="#" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">-->
+<!--        <button class="modal-close" type="button"></button>-->
+<!--    </section>-->
+<!--    <section class="modal-write">-->
+<!--        <h2 class="visually-hidden">Напишите нам</h2>-->
+<!--        <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">-->
+<!--            <p class="input-item">-->
+<!--                <label for="write_name">Ваше имя:</label>-->
+<!--                <input class="modal-write-name" id="write_name" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>-->
+<!--            </p>-->
+<!--            <p class="input-item">-->
+<!--                <label for="write_email">Ваш e-mail:</label>-->
+<!--                <input class="modal-write-email" id="write_email" type="email" name="email" placeholder="Для отправки ответа" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>-->
+<!--            </p>-->
+<!--            <p class="input-item">-->
+<!--                <label for="white_text">Текст письма:</label>-->
+<!--                <textarea name="plaintext" id="white_text" cols="30" rows="10">В свободной форме</textarea>-->
+<!--            </p>-->
+<!--            <button class="button" type="submit">Отправить</button>-->
+<!--        </form>-->
+<!--        <button class="modal-close" type="button">Закрыть</button>-->
+<!--    </section>-->
 </body>
 </html>
