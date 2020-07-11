@@ -1388,3 +1388,149 @@ input[type="radio"].visually-hidden {
     background-position: 0 0;
     background-repeat: no-repeat;
 }
+
+.page-title {
+    box-sizing: border-box;
+    padding: 30px 25px;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+
+    background-color: #f2f6f8;
+}
+
+/* Сетка каталога */
+
+.catalog-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aside-column {
+    width: 220px;
+    box-shadow: inset 0 0 0 1px #ff00ff;
+}
+
+.main-column {
+    width: 700px;
+    box-shadow: inset 0 0 0 1px #ff00ff;
+}
+
+/* Фильтр */
+
+.filter__heading {
+    box-sizing: border-box;
+    margin: 15px 0 0;
+    padding: 15px 20px 10px;
+    width: 100%;
+
+    font-family: ptsans, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #f7f3ec;
+    border-radius: 3px;
+}
+
+.fieldset {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+}
+
+.fieldset-manufacturer {
+    margin-bottom: 20px;
+}
+
+.fieldset-heading {
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+
+    font-family: ptsans, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #04ff00;
+}
+
+.filter-item-range {
+    margin: 0;
+    padding: 70px 0;
+    width: 100%;
+
+    box-shadow: inset 0 0 0 1px #0004ff;
+}
+
+.filter-option-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.filter-option {
+    margin: 0;
+    padding: 10px 35px;
+}
+
+.filter-option label {
+    position: relative;
+
+    font-family: ptsans, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.filter-input-checkbox + .label-manufacturer::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -35px;
+
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../svg/checkbox-off.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked + .label-manufacturer::after {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -35px;
+
+    display: block;
+    width: 27px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../svg/checkbox-on.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
