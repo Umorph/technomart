@@ -1332,3 +1332,59 @@ input[type="radio"].visually-hidden {
     padding-left: 55px;
 }
 
+/* Catalog */
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 60px;
+
+    list-style: none;
+}
+
+.breadcrumb {
+    position: relative;
+
+    padding-right: 35px;
+    min-height: 18px;
+
+    font-family: ptsant, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.breadcrumb-home {
+    width: 15px;
+    height: 12px;
+
+    background-image: url('../svg/icon-home.svg');
+    background-position: -2px 2px;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    right: 13px;
+
+    display: block;
+    width: 8px;
+    height: 12px;
+
+    background-image: url("../svg/icon-right-small.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
