@@ -1597,7 +1597,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    
+
     background-color: #f2f6f8;
 }
 
@@ -1674,4 +1674,44 @@ input[type="radio"].visually-hidden {
     background-image: url("../svg/icon-down-dir.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+}
+
+/* Catalog */
+
+.catalog-list {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 320px 320px 320px;
+    grid-gap: 20px;
+    margin: 0;
+    padding: 0;
+    width: 700px;
+
+    list-style: none;
+    box-shadow: inset 0 0 0 1px #0000ff;
+}
+
+.catalog-item {
+    position: relative;
+    border: 1px solid #cccccc;
+}
+
+.catalog-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.catalog-item .flag-new {
+    background: url("../img/icon-new.png") no-repeat 0 0;
+}
+
+.action-buy,
+.actions-bookmark {
+    
 }
